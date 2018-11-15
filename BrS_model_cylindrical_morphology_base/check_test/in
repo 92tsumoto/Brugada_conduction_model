@@ -1,0 +1,138 @@
+// coupled type
+// case:0 gap-junction alone
+// case:1 gap-junction and EF coupling
+1
+
+/* Simulation cases for methods to localize Na channel */
+// case:1  homogeneous myofiber with heterogeneous NaCh distribution
+// case:2  homogeneous myofiber with uniform distribution of NaCh
+// case:3  heterogeneous myofiber with heterogeneous NaCh distribution
+// case:4  Spacial case of heterogeneous myofiber with heterogeneous NaCh distribution
+// case:5  gna_jm = 3.0xgna_lm
+// case:6  gna_jm = 4.0xgna_lm
+// case:7  gna_jm = 4.5xgna_lm
+// case:8  gna_jm = 5.0xgna_lm
+// case:8  gna_jm = 9.0xgna_lm
+6
+
+/* gNa_fast value */
+//14.868	// mS/mF
+11.0	// mS/mF
+
+// If the distribution of Na channel at surface membrane is heterogenenous,
+// then Na channel density ratio is described as follows: JM unit: LM unit.
+// JM ratio1
+1.0
+
+// LM ratio1
+1.0
+
+// JM ratio2
+0.0
+
+// LM ratio2
+0.0
+
+// Radius of the cell (cm)
+0.0010
+
+// Length of the cell (cm)
+0.0135
+
+/* Intracellular resistance (Endo site) Rmyo1 [Ohm cm] */
+100
+
+/* Gap junction conductance rate */
+1.0
+
+/* Cleft resistivity [Ohm cm] */
+4E+6
+
+// cleft width
+15.0e-07
+
+/* Base cycle length */
+1000
+
+/* Istim */
+//-60.0	
+//-50.0	
+//-100.0	
+-120.0	
+//-300
+
+/* Simulation ceses for the fiber with the different number of Endo, M, Epi cells */
+// case:1 Endo cell
+// case:2 M cell
+// case:3 Epi cell
+3
+
+/* number of datas */
+1
+
+/* initial state */
+
+-87.84       // Vm            = x[0]
+0.0074621    // m             = x[1]
+0.692591     // hfast         = x[2]
+0.692477     // j             = x[3]
+0.448501     // hCaMK,slow    = x[4]
+0.692413     // jCaMK         = x[5]
+0.000194015  // ml            = x[6]
+0.496116     // hl            = x[7]
+0.265885     // hl,CaMK       = x[8]
+0.00101185   // a             = x[9]
+0.999542     // i_fast        = x[10]
+0.589579     // i_slow        = x[11]
+0.000515567  // a,CaMK        = x[12]
+0.999542     // i,CaMK,fast   = x[13]
+0.641861     // i,CaMK,slow   = x[14]
+2.43015E-9   // d             = x[15]
+1.0          // f_fast        = x[16]
+0.910671     // f_slow        = x[17]
+1.0          // fca_fast      = x[18]
+0.99982      // fca_slow      = x[19]
+0.999977     // jca           = x[20]
+1.0          // f,CaMK_fast   = x[21]
+1.0          // fca,CaMK_fast = x[22]
+0.00267171   // n             = x[23]
+8.26608E-6   // xr_fast       = x[24]
+0.453268     // xr_slow       = x[25]
+0.270492     // xs1           = x[26]
+0.0001963    // xs2           = x[27]
+0.996801     // xk1           = x[28]
+0.0124065    // CaMK,trap     = x[29]
+2.53943E-5   // jrel_NP       = x[30]
+3.17262E-7   // jrel_CaMK     = x[31]
+7.23      	 // Na_i          = x[32]
+7.23      	 // Na_ss         = x[33]
+143.79       // K_i           = x[34]
+143.79       // K_ss          = x[35]
+8.54E-5      // Ca_i          = x[36]
+8.43E-5      // Ca_ss         = x[37]
+1.61         // Ca_NSR        = x[38]
+1.56         // Ca_JSR        = x[39]
+
+/* direction of time */
+1
+
+/* end time. 0.0 = nolimit of integration */ 
+0
+
+/* RGC */
+2.0
+
+/* ICaL rate */
+0.8
+
+/* stim_sw: pacing site */
+/* if stim_sw=0, then pacing site 1st cell */
+/* if stim_sw!=0, then pacing site last cell */
+0
+
+1		/* number of period */
+1000	/* strip for integral */
+0       /* write file 0 --- not write/1 --- write */
+0       /* Ina and Ical data write file 0 --- not write/1 --- write */
+0       /* cleft_v and intra_v data write file 0 --- not write/1 --- write */
+0       /* Nai and Ki data write file 0 --- not write/1 --- write */
