@@ -1,0 +1,14 @@
+
+human ventricular myocardial fiber model with gap junction and ephaptic couplings.
+Each cell is a cylindrical morphology.
+Each cell is O'Hara et al human ventricular myocyte model, replacing the INa model with tenTusscher et al human ventricular myocyte model.
+
+For compile
+
+%aclocal
+%autoconf
+%./configure
+%autoheader
+%automake -a
+%make
+
